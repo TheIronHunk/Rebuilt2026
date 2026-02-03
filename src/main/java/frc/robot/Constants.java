@@ -16,4 +16,22 @@ public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
   }
+
+  public static class SkeletonConstants {
+    public static int skeletonMotionMagicExpoK_V;
+    public static int skeletonMotionMagicExpoK_A;
+    public static int skeletonMotionMagicAccel;
+    public static int skeletonMotionMagicJerk;
+    public static int SupplyCurrentLimit;
+    public static int StatorCurrentLimit;
+    public static int skeletonMotorID;
+    public static double[] skeletonPID = {0, 0, 0};
+    public static double[] skeletonSVA = {0, 0, 0};
+    public enum SkeletonWantedState {
+      IDLE
+    }
+    public enum SystemState {
+      IDLING
+    }
+  }
 }
